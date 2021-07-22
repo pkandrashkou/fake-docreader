@@ -5,7 +5,7 @@ let package = Package(
     name: "FakeDocumentReader",
     products: [
         // .library(name: "FaceSDK", targets: ["FaceSDK-Target"])
-        .library(name: "FakeDocumentReader", targets: ["FaceSDK", "RegulaCommon"])
+        .library(name: "FakeDocumentReader", targets: ["FakeDocumentReader", "RegulaCommon"])
     ],
     targets: [
         .binaryTarget(
