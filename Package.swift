@@ -22,7 +22,7 @@ let package = Package(
                     .target(name: "FakeDocumentReader", condition: .when(platforms: .some([.iOS]))),
                     .target(name: "RegulaCommon", condition: .when(platforms: .some([.iOS])))
             ],
-            path: "FakeDocumentReader-Target"
+            path: "FakeDocumentReaderTarget"
         )
     ]
 )
