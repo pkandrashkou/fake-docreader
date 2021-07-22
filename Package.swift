@@ -5,7 +5,7 @@ let package = Package(
     name: "FakeDocumentReader",
     products: [
         // .library(name: "FaceSDK", targets: ["FaceSDK-Target"])
-        .library(name: "FakeDocumentReader", targets: ["FakeDocumentReader-Target"])
+        .library(name: "FakeDocumentReader", targets: ["FakeDocumentReaderTarget"])
     ],
     dependencies: [
         .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", .branch("master")),
@@ -17,12 +17,12 @@ let package = Package(
             checksum: "a57b85077f1476db5ba44918923dca36945e7f54266ad38e1bf184b369f4370d"
         ),
         .target(
-            name: "FakeDocumentReader-Target",
+            name: "FakeDocumentReaderTarget",
              dependencies: [
                     .target(name: "FakeDocumentReader", condition: .when(platforms: .some([.iOS]))),
-                    .target(name: "RegulaCommon", condition: .when(platforms: .some([.iOS])))
+                    .product(name: "RegulaCommon", package: "RegulaCommon")
             ],
-            path: "FakeDocumentReaderTarget"
+            path: "Sources"
         )
     ]
 )
