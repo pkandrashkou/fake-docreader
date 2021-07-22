@@ -8,13 +8,13 @@ let package = Package(
         .library(name: "FakeDocumentReader", targets: ["FakeDocumentReaderTarget"])
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", from: "0.0.1"),
+        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", from: "0.0.3"),
     ],
     targets: [
         .binaryTarget(
             name: "FakeDocumentReader",
-            url: "https://pods.regulaforensics.com/RegulaCommon/doc-reader/FakeDocumentReader.xcframework.zip",
-            checksum: "a57b85077f1476db5ba44918923dca36945e7f54266ad38e1bf184b369f4370d"
+            url: "https://pods.regulaforensics.com/RegulaCommon/doc-reader/0.0.3/FakeDocumentReader.xcframework.zip",
+            checksum: "28132c969b69ebd4edfe7e9581a52d082c89589c316d66e527eea23803ff8f02"
         ),
         .target(
             name: "FakeDocumentReaderTarget",
