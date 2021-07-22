@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "FakeDocumentReader", targets: ["FakeDocumentReaderTarget"])
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", .branch("master")),
+        .package(name: "RegulaCommon", url: "https://github.com/pkondrashkov/common", from: "0.0.1"),
     ],
     targets: [
         .binaryTarget(
