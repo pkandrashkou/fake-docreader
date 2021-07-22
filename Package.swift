@@ -11,7 +11,7 @@ let package = Package(
         .binaryTarget(
             name: "FakeDocumentReader",
             url: "https://pods.regulaforensics.com/RegulaCommon/doc-reader/FakeDocumentReader.xcframework.zip",
-            checksum: "d5e2dad5dc8be7439c7ef50184c3bb03f7bc52416dc741ff5a2d4e97d88d9559"
+            checksum: "a57b85077f1476db5ba44918923dca36945e7f54266ad38e1bf184b369f4370d"
         ),
         .binaryTarget(
             name: "RegulaCommon",
